@@ -1,2 +1,2 @@
-GET /github/license/:sivey/:py_flies
+GET /github/license/sivey/py_flies
 
