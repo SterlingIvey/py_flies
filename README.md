@@ -1,1 +1,2 @@
-![GitHub License](https://img.shields.io/github/license/sivey/%20py_flies)
+GET /github/license/:sivey/:py_flies
+
