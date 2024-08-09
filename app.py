@@ -24,16 +24,17 @@ row in df.iterrows()]
 dropdown_options = generate_dropdown_options(df)
 
 # Layout of the app
-app.layout = html.Div(className='container', children=[])
-html.H1('Fly Reference Guide'),
-html.Div(className='dropdown-container', children=[])
-dcc.Dropdown(
+app.layout = html.Div(className='container', children=[
+    html.H1('Fly Reference Guide'),
+    html.Div(className='dropdown-container', children=[
+        dcc.Dropdown(
         id='fly-dropdown',
         options=dropdown_options,
         placeholder='Select a fly',
         )
-html.Div(id='fly-info')
-
+    ]),
+    html.Div(id='fly-info')
+])
 
 # Callback to update the fly information
 @app.callback(
